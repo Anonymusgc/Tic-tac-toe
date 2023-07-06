@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kółko i krzyżyk</h1>
+    </header>
+    <h2 class="result"></h2>
+    
+    <main>
+      
+      <section class="player">
+        <div class="player-title-container">
+          <h3 class="player-title">Nazwa: Gracz 1</h3>
+          <button class="btn-name-change css-button-retro--sand"><img src="icons/edit-outline.svg" alt="edit icon"></button>
+          <dialog class="name-change-modal">
+            <label for="name-change">Wpisz nową nazwę użytkownika:</label><br>
+            <input type="text" name="changeName" id="name-change" class="name-change"><br>
+            <button class="close-btn">Wstecz</button>
+            <input type="submit" value="Potwierdź" class="confirm-btn" data-id="1">
+            <p class="error-msg"></p>
+          </dialog>
+        </div>
+       
+        <p>Liczba Wygranych: </p>
+        <p class="score">1</p>
+        <p>Znak: </p>
+        <p class="type">znak-ph</p>
+      </section>
+      <div class="container">
+        <div class="board">
+          <span class="field border-bt border-r hidden">_</span>
+          <span class="field border-bt border-r hidden" >_</span>
+          <span class="field border-bt hidden">_</span>
+          <span class="field border-bt border-r hidden">_</span>
+          <span class="field border-bt border-r hidden">_</span>
+          <span class="field border-bt hidden">_</span>
+          <span class="field border-r hidden">_</span>
+          <span class="field border-r hidden">_</span>
+          <span class="field hidden">_</span>      
+        </div>
+      </div>
+      <section class="player">
+        <div class="player-title-container">
+          <h3 class="player-title">Nazwa: Gracz 2</h3>
+          <button class="btn-name-change css-button-retro--sand"><img src="icons/edit-outline.svg" alt="edit icon"></button>
+          <dialog class="name-change-modal">
+            <label for="name-change">Wpisz nową nazwę użytkownika:</label><br>
+            <input type="text" name="changeName" id="name-change" class="name-change"><br>
+            <button class="close-btn">Wstecz</button>
+            <input type="submit" value="Potwierdź" class="confirm-btn" data-id="2">
+            <p class="error-msg"></p>            
+          </dialog>
+        </div>
+        <p>Liczba Wygranych:</p>
+        <p class="score">0</p>
+        <p>Znak</p>
+        <p class="type">znak-ph</p>
+      </section>
+      <section class="player">
+        <h3>Aktywny Gracz: </h3>
+        <p class="active-player">ph</p>
+      </section>
+      <section class="btns-section">
+        <button class="play-again-btn">Zagraj ponownie</button>
+        <button class="clear-btn"><img src="icons/trash-can.svg" alt="trash-can, clear btn"></button>
+      </section>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
